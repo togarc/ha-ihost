@@ -1,0 +1,16 @@
+rest_command:
+  play_speaker_sound_alarm:
+    url: "http://YOUR iHOST IP/open-api/v1/rest/hardware/speaker"
+    method: POST
+    headers:
+      Content-Type: application/json
+      Authorization: "Bearer 1795590-b286-xxxx-9c6d-321xxzxx16743"
+    payload: >
+      {
+        "type": "play_sound",
+        "sound": {
+          "name": "alert5",
+          "volume": 100,
+          "countdown": 10
+        }
+      }
